@@ -10,7 +10,6 @@ const getBookQuery = gql`
 `
 
 const getBookDetailQuery = gql`
-
   query($id:ID){
     book(id:$id){
         id
@@ -27,7 +26,6 @@ const getBookDetailQuery = gql`
         }
     }
   }
-
 `
 
 const getAuthorQuery = gql`

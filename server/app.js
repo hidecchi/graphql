@@ -27,7 +27,7 @@ const path = require("path")
 app.use(express.static(path.join(path.resolve(__dirname, '..'), "public")))
 
 app.get("*", (req, res) => {
-    res.sendFile(path.join(path.resolve(__dirname, '..'), "client", "build", "index.html"));
+    res.sendFile(path.join(path.resolve(__dirname, '..'), "public", "index.html"));
     // res.send('Hello, World');
 });
 
